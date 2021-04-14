@@ -1,3 +1,108 @@
+/* Imports */
+/* laptop */
+@media only screen and (max-width: 992px) {
+  .top .desc {
+    margin: 2rem 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .top .desc p {
+    padding: 0 !important;
+    margin: 1rem 0 2rem 0;
+  }
+  .top .desc button {
+    margin: 0 !important;
+  }
 
+  .search button {
+    margin-top: 1rem;
+    width: 50% !important;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  P {
+    font-size: 1rem !important;
+  }
+
+  .top .desc button {
+    width: 75%;
+  }
+
+  .search button {
+    margin-top: 1rem;
+    width: 100% !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: #bfbfbf;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Section one */
+.top .desc button {
+  background: #2acfcf;
+  border-radius: 2rem;
+  padding: 0.75rem 3rem;
+  color: #fff;
+}
+.top .desc button:hover {
+  opacity: 0.6;
+}
+.top .search {
+  background-image: url(../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #3b3054;
+  padding: 2rem;
+}
+.top .search button {
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

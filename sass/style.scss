@@ -1,0 +1,76 @@
+/* Imports */
+@import "./components/responsivness";
+
+// Variables
+$Cyan: hsl(180, 66%, 49%);
+$Dark-Violet: hsl(257, 27%, 26%);
+$Red: hsl(0, 87%, 67%);
+$Gray: hsl(0, 0%, 75%);
+$Grayish-Violet: hsl(257, 7%, 63%);
+$Very-Dark-Blue: hsl(255, 11%, 22%);
+$Very-Dark-Violet: hsl(260, 8%, 14%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: $Gray;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $Gray;
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Section one */
+.top {
+  .desc {
+    button {
+      background: $Cyan;
+      border-radius: 2rem;
+      padding: 0.75rem 3rem;
+      color: #fff;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  .search {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $Dark-Violet;
+    padding: 2rem;
+    button {
+      width: 100%;
+    }
+  }
+}
