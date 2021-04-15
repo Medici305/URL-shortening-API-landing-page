@@ -1,6 +1,11 @@
 /* Imports */
 /* laptop */
 @media only screen and (max-width: 992px) {
+  hr {
+    width: 75%;
+    margin: 0 auto;
+  }
+
   .top .desc {
     margin: 2rem 0;
     justify-content: center;
@@ -14,9 +19,59 @@
     margin: 0 !important;
   }
 
+  .search {
+    bottom: -10rem !important;
+  }
   .search button {
     margin-top: 1rem;
     width: 50% !important;
+  }
+
+  .navbar-collapse {
+    background: #3b3054;
+    text-align: center;
+    margin: 1rem 0rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem 0 3rem 0;
+  }
+  .navbar-collapse ul {
+    margin-left: 0 !important;
+  }
+  .navbar-collapse a {
+    margin: 0.5rem 0rem;
+    color: #fff !important;
+  }
+  .navbar-collapse button {
+    display: block;
+    margin: 0 auto !important;
+    width: 75%;
+  }
+
+  .login {
+    margin-right: 0 !important;
+    color: #fff !important;
+  }
+
+  .cards {
+    margin-top: 5rem !important;
+    text-align: center;
+  }
+  .cards .card {
+    margin: 2rem 0;
+  }
+  .cards .card .img-bg {
+    left: 40% !important;
+  }
+
+  .footer {
+    text-align: center;
+  }
+  .footer h2 {
+    margin-bottom: 2rem !important;
+  }
+  .footer i {
+    margin-top: 2rem !important;
   }
 }
 /* Tablet */
@@ -52,15 +107,20 @@
 
 body {
   font-family: Poppins;
+  overflow-x: hidden;
 }
 
 h1 {
   font-size: 5rem;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 p {
   font-size: 1.4rem;
-  color: #bfbfbf;
+  color: #9e9aa7;
 }
 
 /* width */
@@ -85,6 +145,22 @@ p {
 }
 
 /* Section one */
+.top {
+  position: relative;
+}
+.top .login {
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+}
+.top .sign-up {
+  background: #2acfcf;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  color: #fff;
+}
+.top .sign-up:hover {
+  opacity: 0.6;
+}
 .top .desc button {
   background: #2acfcf;
   border-radius: 2rem;
@@ -100,9 +176,98 @@ p {
   background-size: cover;
   background-color: #3b3054;
   padding: 2rem;
+  margin-top: 5rem;
+  position: absolute;
+  bottom: -8rem;
+  width: 100%;
+  z-index: 2;
 }
 .top .search button {
   width: 100%;
+  background: #2acfcf;
+}
+
+/* Section 2 - advanced statistics */
+.advanced-stat {
+  position: relative;
+  background-color: #eff1f7;
+  margin-top: 5rem;
+  min-height: 50vh;
+}
+.advanced-stat .title {
+  margin-top: 10rem;
+}
+.advanced-stat .cards {
+  margin: 7.5rem 0rem;
+}
+.advanced-stat .cards .card {
+  position: relative;
+}
+.advanced-stat .cards .card .img-bg {
+  background-color: #3b3054;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 20%;
+  position: absolute;
+  width: 20%;
+  top: -2rem;
+  left: 2rem;
+}
+.advanced-stat .cards .card .card-body {
+  margin-top: 3rem;
+}
+.advanced-stat .cards .card .card-body h5 {
+  font-size: 1.5rem;
+}
+.advanced-stat .cards .card .card-body p {
+  font-size: 1.1rem;
+}
+
+/* Section three - boost your links today */
+.boost-link {
+  background-image: url(../images/bg-boost-desktop.svg);
+  background-color: #3b3054;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0rem;
+}
+.boost-link button {
+  background: #2acfcf;
+  border-radius: 2rem;
+  padding: 0.75rem 3rem;
+  color: #fff;
+}
+.boost-link button:hover {
+  opacity: 0.6;
+}
+
+/* Section four - footer */
+.footer {
+  background-color: black;
+  color: #fff;
+}
+.footer i {
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+.footer i:hover {
+  color: #2acfcf;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer ul a:hover {
+  color: #2acfcf;
+}
+
+.line {
+  height: 0.2rem;
+  background-color: #2acfcf;
+  width: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
