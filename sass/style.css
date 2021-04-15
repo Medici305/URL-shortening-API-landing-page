@@ -13,7 +13,7 @@
   }
   .top .desc p {
     padding: 0 !important;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0rem 2rem 0rem;
   }
   .top .desc button {
     margin: 0 !important;
@@ -97,6 +97,16 @@
   .search button {
     margin-top: 1rem;
     width: 100% !important;
+  }
+
+  .cards {
+    margin-bottom: 5rem !important;
+  }
+  .cards .card {
+    width: 20rem !important;
+  }
+  .cards .card .card-body {
+    margin-top: 2rem !important;
   }
 }
 * {
@@ -198,7 +208,8 @@ p {
   margin-top: 10rem;
 }
 .advanced-stat .cards {
-  margin: 7.5rem 0rem;
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 .advanced-stat .cards .card {
   position: relative;

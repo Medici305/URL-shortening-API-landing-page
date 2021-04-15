@@ -95,7 +95,6 @@ p {
 /* Section 2 - advanced statistics */
 .advanced-stat {
   position: relative;
-  //border: 10px solid black;
   background-color: $second-bg;
   margin-top: 5rem;
   min-height: 50vh;
@@ -103,7 +102,8 @@ p {
     margin-top: 10rem;
   }
   .cards {
-    margin: 7.5rem 0rem;
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
     .card {
       position: relative;
       .img-bg {
