@@ -20,8 +20,8 @@
     <div class="row justify-content-center">
       <div class="col-11 bg-white top">
         <!-- 1.1 Header containing responsive nav  -->
-        <div class="row my-3">
-          <div class="col">
+        <div class="row my-3 slide">
+          <div class="col navigation">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
               <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
                     <a class="nav-link" href="#">Pricing</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link href="#">Resources</a>
+                    <a class="nav-link" href="#">Resources</a>
                   </li>
                 </ul>
                 <hr class="d-block d-sm-block d-md-block d-lg-none bg-secondary">
@@ -47,9 +47,9 @@
           </div>
         </nav>
     <!-- 1.2 Banner with main title and slogan -->
-    <div class="row my-5 justify-content-center align-items-center">
+    <div class="row my-5 justify-content-center align-items-center slide">
       <!-- 1.2.1 Title/Description -->
-      <div class="col-lg-6 desc  order-2 order-lg-1">
+      <div class="col-lg-6 desc order-2 order-lg-1">
         <h1 class="font-weight-bold">More than just shorter links</h1>
         <p class="pr-5">
           Build your brand’s recognition and get detailed insights 
@@ -58,7 +58,7 @@
         <button class="btn my-3 font-weight-bold">Get Started</button>
       </div>
       <!-- 1.2.2 Image -->
-      <div class="col-lg-6 order-1 order-lg-2">
+      <div class="col-lg-6 banner-img order-1 order-lg-2">
         <img class="img-fluid" src="./images/illustration-working.svg" alt="illustration-working">
       </div>
     </div>
@@ -66,20 +66,25 @@
     <div class="row search rounded shadow justify-content-center align-items-center">
       <div class="col-lg-10">
         <div class="input-group">
-          <input type="url" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="url" class="form-control input-search" placeholder="Shorten a link here..." aria-label="url shortener" aria-describedby="basic-addon1">
         </div>
       </div>
       <div class="col-lg-2 text-center">
-        <button class="btn text-white font-weight-bold">Shorten It</button>
+        <button type="submit" class="btn submit-button text-white font-weight-bold">Shorten It!</button>
       </div>
     </div>
-    <!-- Add the results from the search -->
   </div>
 </div>
 
     <!-- 2. Second Row advanced statistics -->
-    <div class="row advanced-stat justify-content-center">
+    <div class="row advanced-stat justify-content-center slide">
       <div class="col-11">
+        <!-- Add the results from the search -->
+        <div class="row search-results">
+          <div class="col item">
+
+          </div>
+        </div>
         <!-- 2.1 Advanced Statistics title and sub title  -->
         <div class="row justify-content-center text-center title">
           <div class="col-10 col-lg-6">
@@ -138,21 +143,21 @@
     </div>
 
     <!-- 3. Third Row boost your links today -->
-    <div class="row justify-content-center boost-link">
-      <div class="col text-center text-white">
+    <div class="row justify-content-center boost-link slide">
+      <div class="col text-center text-white ad">
         <h2 class="font-weight-bold">Boost your links today</h2>
         <button class="btn my-3 font-weight-bold">Get Started</button>
       </div>
     </div>
 
     <!-- 4. Fourth Row footer  -->
-    <div class="row footer justify-content-center py-5">
+    <div class="row footer justify-content-center py-5 slide">
       <div class="col-11">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 foot">
             <h2 class="font-weight-bold">Shortly</h2>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 foot">
             <ul>
               <li class="mb-4"><a class="font-weight-bold" href="#">Features</a></li>
               <li><a href="#">Link Shortening</a></li>
@@ -160,7 +165,7 @@
               <li><a href="#">Analytics</a></li>
             </ul>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 foot">
             <ul>
               <li class="mb-4"><a class="font-weight-bold" href="#">Resources</a></li>
               <li><a href="#">Blog</a></li>
@@ -168,7 +173,7 @@
               <li><a href="#">Support</a></li>
             </ul>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 foot">
             <ul>
               <li class="mb-4"><a class="font-weight-bold" href="#">Company</a></li>
               <li><a href="#">About</a></li>
@@ -177,7 +182,7 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 foot">
             <i class="fab fa-facebook fa-2x"></i>
             <i class="fab fa-twitter fa-2x"></i>
             <i class="fab fa-pinterest fa-2x"></i>
@@ -192,6 +197,13 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ==" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.js" integrity="sha512-Lp5HNBT3rdK4ciKlnzZg+Y3OQ8ey6lvT2KK4x4LJwQGCgqDVipBV8Lx68uDoxUYI0HjtpR2NqD7QMN6bNNWOHA==" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script> -->
   <script src="./app.js"></script>
 </body>
 </html>

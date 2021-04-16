@@ -1,6 +1,7 @@
 /* Imports */
 @import "./components/responsivness";
 @import "./components/variables";
+@import "./components/animations";
 
 * {
   margin: 0;
@@ -99,7 +100,7 @@ p {
   margin-top: 5rem;
   min-height: 50vh;
   .title {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   .cards {
     margin-top: 7.5rem;
@@ -151,6 +152,7 @@ p {
 .footer {
   background-color: black;
   color: #fff;
+  overflow: hidden;
   i {
     cursor: pointer;
     margin: 0 0.5rem;
@@ -166,6 +168,29 @@ p {
       &:hover {
         color: $Cyan;
       }
+    }
+  }
+}
+
+.search-results {
+  margin-top: 5rem;
+  .output {
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    .shorten-url {
+      color: $Cyan;
+      text-align: center;
+    }
+    button {
+      background-color: $Cyan;
+      color: #fff;
+      border-radius: 0.5rem;
+      padding: 0.5rem 2rem;
+      text-align: center;
     }
   }
 }
