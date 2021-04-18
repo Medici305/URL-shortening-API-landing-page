@@ -5,14 +5,15 @@ const apiKey = "5fa28a5e63f74826994a50cbc9856419";
 const inputSearch = document.querySelector(".input-search");
 const submitButton = document.querySelector(".submit-button");
 const searchResult = document.querySelector(".item");
+const modal = document.querySelector(".cover");
 let searchValue;
 
 /* Functions */
 function animateSlide() {
   controller = new ScrollMagic.Controller();
   // Add the animation to scroll
-  const rows = document.querySelectorAll(".row");
-  rows.forEach((slide) => {
+  const sliders = document.querySelectorAll(".slide");
+  sliders.forEach((slide) => {
     // Create timeline and add animation to each selector
     const nav = document.querySelector(".navigation");
     const bannerText = document.querySelector(".desc");
@@ -125,10 +126,16 @@ const createResultContainer = (result) => {
   searchResult.appendChild(row);
   // EventListern for copy to clipboard
   copyButton.addEventListener("click", () => {
-    console.log(shortenURL.innerText);
-    shortenURL.innerText.select();
+    const textArea = document.createElement("textArea");
+    textArea.value = shortenURL.innerText;
+    document.body.appendChild(textArea);
+    textArea.select();
     document.execCommand("copy");
-    alert("Copied the text: " + shortenURL.value);
+    document.body.removeChild(textArea);
+    // //alert("Copied the text: " + shortenURL.value);
+    // console.log(box);
+    // modal.classList.replace("hidden", "active");
+    // box.classList.replace("hidden", "active");
   });
 };
 
@@ -162,18 +169,17 @@ function validURL(str) {
   return !!pattern.test(str);
 }
 
-function displayErrorMessage() {}
-
 // EventListeners
 inputSearch.addEventListener("input", updateInput);
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
-  if (validURL(searchValue)) {
+  if (validURL(searchValue) || undefined) {
     shortenURL(searchValue);
     clear();
   } else {
     alert("Wrong input try again");
+    clear();
   }
 });
 
-//animateSlide();
+animateSlide();
