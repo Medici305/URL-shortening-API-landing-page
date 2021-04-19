@@ -6,6 +6,7 @@ const inputSearch = document.querySelector(".input-search");
 const submitButton = document.querySelector(".submit-button");
 const searchResult = document.querySelector(".item");
 const modal = document.querySelector(".cover");
+const close = document.querySelector(".close");
 let searchValue;
 
 /* Functions */
@@ -73,18 +74,18 @@ function animateSlide() {
     slideTl.fromTo(footer, { y: "200%" }, { y: "0", stagger: ".25" }, "-=1");
 
     // Add animation on scroll
-    slideScene = new ScrollMagic.Scene({
-      triggerElement: slide,
-      triggerHook: "0.9",
-      reverse: false,
-    })
-      .setTween(slideTl)
-      .addIndicators({
-        colorStart: "blue",
-        colorTrigger: "red",
-        name: "slide",
-      })
-      .addTo(controller);
+    // slideScene = new ScrollMagic.Scene({
+    //   triggerElement: slide,
+    //   triggerHook: "0.75",
+    //   reverse: false,
+    // })
+    //   .setTween(slideTl)
+    //   .addIndicators({
+    //     colorStart: "blue",
+    //     colorTrigger: "red",
+    //     name: "slide",
+    //   })
+    //   .addTo(controller);
   });
 }
 
@@ -124,7 +125,7 @@ const createResultContainer = (result) => {
   row.appendChild(shortenURL);
   row.appendChild(copyButton);
   searchResult.appendChild(row);
-  // EventListern for copy to clipboard
+  // EventListener for copy to clipboard
   copyButton.addEventListener("click", () => {
     const textArea = document.createElement("textArea");
     textArea.value = shortenURL.innerText;
@@ -132,10 +133,6 @@ const createResultContainer = (result) => {
     textArea.select();
     document.execCommand("copy");
     document.body.removeChild(textArea);
-    // //alert("Copied the text: " + shortenURL.value);
-    // console.log(box);
-    // modal.classList.replace("hidden", "active");
-    // box.classList.replace("hidden", "active");
   });
 };
 

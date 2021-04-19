@@ -313,45 +313,6 @@ p {
   text-align: center;
 }
 
-/* Modal */
-.cover {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  overflow-y: hidden !important;
-  z-index: 5;
-  transition: all 0.5s ease-in-out;
-}
-.cover .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  border-radius: 0.5rem;
-  min-height: 20vh;
-  transition: all 0.5s ease-in-out;
-  transform: translateX(-2rem);
-}
-.cover .content:active {
-  transform: translateX(0rem);
-}
-.cover .content h4 {
-  padding: 2rem;
-}
-
-.hidden {
-  display: none;
-  opacity: 0;
-}
-.hidden:active {
-  display: flex;
-  opacity: 1;
-}
-
 .line {
   height: 0.2rem;
   background-color: #2acfcf;
