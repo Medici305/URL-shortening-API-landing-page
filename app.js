@@ -182,4 +182,4 @@ submitButton.addEventListener("click", (e) => {
   clear();
 });
 
-//animateSlide();
+animateSlide();
