@@ -115,6 +115,9 @@ const createResultContainer = (result) => {
   shortenURL.innerText = result.shortUrl;
   // 3. Copy button
   const copyButton = document.createElement("button");
+  copyButton.setAttribute("type", "button");
+  copyButton.setAttribute("data-toggle", "modal");
+  copyButton.setAttribute("data-target", ".bd-example-modal-sm");
   copyButton.classList.add("btn");
   copyButton.classList.add("copy-btn");
   copyButton.classList.add("col-8");
@@ -170,13 +173,13 @@ function validURL(str) {
 inputSearch.addEventListener("input", updateInput);
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
-  if (validURL(searchValue) || undefined) {
+  if (validURL(searchValue) && searchValue.includes("rebrand") === false) {
     shortenURL(searchValue);
-    clear();
+    console.log(inputSearch.value);
   } else {
     alert("Wrong input try again");
-    clear();
   }
+  clear();
 });
 
-animateSlide();
+//animateSlide();

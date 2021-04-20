@@ -122,6 +122,14 @@
   .boost-link h2 {
     font-size: 2rem;
   }
+
+  .modal-content {
+    padding: 2rem;
+    text-align: center;
+  }
+  .modal-content i {
+    margin-left: 0.75rem;
+  }
 }
 * {
   margin: 0;
@@ -311,6 +319,15 @@ p {
   border-radius: 0.5rem;
   padding: 0.5rem 2rem;
   text-align: center;
+}
+
+/* Modal */
+.modal-content {
+  padding: 2rem;
+  color: #3b3054;
+}
+.modal-content i {
+  margin-left: 1rem;
 }
 
 .line {

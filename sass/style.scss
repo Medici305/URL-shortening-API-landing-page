@@ -195,6 +195,15 @@ p {
   }
 }
 
+/* Modal */
+.modal-content {
+  padding: 2rem;
+  color: $Dark-Violet;
+  i {
+    margin-left: 1rem;
+  }
+}
+
 .line {
   height: 0.2rem;
   background-color: $Cyan;
