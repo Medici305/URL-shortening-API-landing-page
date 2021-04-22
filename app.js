@@ -72,7 +72,6 @@ function animateSlide() {
       "-=.5"
     );
     slideTl.fromTo(footer, { y: "200%" }, { y: "0", stagger: ".25" }, "-=1");
-
     // Add animation on scroll
     // slideScene = new ScrollMagic.Scene({
     //   triggerElement: slide,
@@ -182,4 +181,6 @@ submitButton.addEventListener("click", (e) => {
   clear();
 });
 
-animateSlide();
+ScrollReveal().reveal(".row");
+
+//animateSlide();
