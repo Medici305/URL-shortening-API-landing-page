@@ -1,3 +1,33 @@
+### What tech stack or technologies was used in creating this project?
+- The tech stack used to complete this project is [HTML, SCSS, Vanilla JS and Bootstrap].
+
+### Talk about some of the features this app has and what is the main purpose of this app?
+- We have all come across webistes with long ruggid names and sharing those links with colledgue freinds etc
+is a time consuming process. In creating this URL shortening landing page i wanted to help people more easily
+share links and at the same time its a good way to market a brand or business an individual want to promote.
+The site is styled with bootstrap so looks modern and simple. GSAP was used for animation once page loads
+and as you scroll each component will animate in. The site is responsive and can be used from desktop/laptop/tablet to mobile.
+Simply enter the url you wish to shorten and upon submit a box component will popup with your new ready made short url.
+All you have to do is click on the box and your new shorten url will automatically be copied.
+
+### Did you come across any obstacles and how did you handle it?
+- Difficulty finding a free or cheap API to work with. Even after coming across rebrandy i spent 
+a little while trying to figure out exactly how to make request using this endpoint. 
+This was the first time i made a post request, having made many simple get request in the past this was new terriorty and i
+was faced with alot of 401 and 403 HTTP states. Online resources such as stackoverflow and devCommunity has helped me understand
+that when making POST requests the api requires extra piece of information and in this scenerio the users input had to be 
+sent with api after being stringify withing headers property. 
+
+### What is one take away from this project?
+- Start attempting to work with various different api's the more difficult the better as this would put me outside my 
+comfort zone and in doing so learn something new. Also try learning other request methods and not only persist with
+what i know best 'GET'. 
+
+### What is one way you could improve this project if you spend more time on it?
+- Find a way to measure traffic online for the user. Compress the link size and
+in doing so maybe increase site performance or load up time.
+Actaully install login feature which will allow users to save a list of their shortened url links.
+
 # Frontend Mentor - Shortly URL shortening API Challenge
 
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
@@ -94,18 +124,3 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
-
-
-### What tech stack or technologies was used in creating this project?
-
-
-### Talk about some of the features this app has and what is the main purpose of this app?
-
-
-### Did you come across any obstacles and how did you handle it?
-
-
-### What is one take away from this project?
-
-
-### What is one way you could improve this project if you spend more time on it?
