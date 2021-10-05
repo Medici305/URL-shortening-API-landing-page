@@ -1,7 +1,7 @@
 /* Variables */
 let controller;
 let slideScene;
-const apiKey = "5fa28a5e63f74826994a50cbc9856419";
+const apiKey = "505bb02ea97546758ccfc847a767fa8d";
 const inputSearch = document.querySelector(".input-search");
 const submitButton = document.querySelector(".submit-button");
 const searchResult = document.querySelector(".item");
@@ -22,7 +22,6 @@ function animateSlide() {
     const searchContainer = document.querySelector(".search");
     const advancedStat = document.querySelector(".title");
     const cards = document.querySelectorAll(".card");
-    const boostLink = document.querySelector(".boost-link");
     const ad = document.querySelector(".ad");
     const footer = document.querySelectorAll(".foot");
     const slideTl = gsap.timeline({
@@ -72,19 +71,6 @@ function animateSlide() {
       "-=.5"
     );
     slideTl.fromTo(footer, { y: "200%" }, { y: "0", stagger: ".25" }, "-=1");
-    // Add animation on scroll
-    // slideScene = new ScrollMagic.Scene({
-    //   triggerElement: slide,
-    //   triggerHook: "0.75",
-    //   reverse: false,
-    // })
-    //   .setTween(slideTl)
-    //   .addIndicators({
-    //     colorStart: "blue",
-    //     colorTrigger: "red",
-    //     name: "slide",
-    //   })
-    //   .addTo(controller);
   });
 }
 
@@ -143,7 +129,7 @@ const shortenURL = async (search) => {
     const dataFetch = await fetch("https://api.rebrandly.com/v1/links", {
       method: "POST",
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
         apikey: apiKey,
       },
       body: JSON.stringify({ destination: search }),
@@ -174,7 +160,6 @@ submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   if (validURL(searchValue) && searchValue.includes("rebrand") === false) {
     shortenURL(searchValue);
-    console.log(inputSearch.value);
   } else {
     alert("Wrong input try again");
   }
@@ -182,5 +167,3 @@ submitButton.addEventListener("click", (e) => {
 });
 
 ScrollReveal().reveal(".row");
-
-//animateSlide();
